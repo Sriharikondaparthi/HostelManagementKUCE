@@ -1,0 +1,4 @@
+STUDENT DATA:
+{"Student_id":"12345T1452","Fname":"ARADHYA","Lname":"CH","Hostel_id":null,"Room_id":null}
+APPLICATIONS:
+{"Application_id":"11","Student_id":"12345T1452","Hostel_id":"2","Application_status":"1","Room_No":null,"Message":"","created_at":"2026-04-19 16:51:36"}

@@ -1,0 +1,188 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+    <meta charset="utf-8">
+    <title>Project Documentation: Hostel Management System</title>
+    <style>
+        body { font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 1.5; color: #000; margin: 40px; }
+        h1 { font-size: 24pt; text-align: center; margin-bottom: 50px; font-weight: bold; }
+        h2 { font-size: 16pt; border-bottom: 1px solid #000; padding-bottom: 5px; margin-top: 30px; font-weight: bold; }
+        h3 { font-size: 14pt; margin-top: 20px; font-weight: bold; }
+        p { text-align: justify; margin-bottom: 15px; }
+        ul, ol { margin-bottom: 15px; text-align: justify; }
+        li { margin-bottom: 5px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #000; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: bold; }
+        .center { text-align: center; }
+    </style>
+</head>
+<body>
+
+    <h1>Project Documentation<br><br>Hostel Management System (H-Track)</h1>
+    
+    <div style="page-break-after: always;"></div>
+
+    <h2>1. Introduction</h2>
+    <p>The Hostel Management System (H-Track) is a comprehensive web-based application designed to streamline and automate the everyday operations of a college or university hostel facility. Managing a hostel involves various administrative tasks ranging from student registration and room allocation to managing daily mess bills, recording attendance, dealing with complaints (messaging), and tracking visitors. A manual approach to tracking these varied activities requires immense manpower and is prone to errors. H-Track solves these issues by creating a centralized, digital dashboard for both students and hostel managers.</p>
+    
+    <h2>2. Problem Statement</h2>
+    <p>Traditional hostel facilities maintain records on paper ledgers or detached spreadsheets. This results in severe data redundancy, delays in calculating monthly mess bills, miscommunication regarding room availability, and opaque complaint resolution processes. Administrative staff find it difficult to track mandate attendance efficiently and students lack a self-service portal to view their dues, request room allocations, or submit profiles. There is an urgent need for an automated tracking system to eliminate paper-based mismanagement.</p>
+    
+    <h2>3. Objective and Project Goal</h2>
+    <p><strong>Objective:</strong> To build a scalable, secure, and user-friendly web portal that acts as a single point of interaction for hostel residents and administrators.</p>
+    <p><strong>Project Goal:</strong> To digitize 100% of the manual workflow of a hostel, notably automating room allocations, dynamically calculating mess and accommodation bills based on verified attendance, enabling a seamless communication channel, and delivering secure data handling through access-control protocols.</p>
+
+    <h2>4. Project Scope</h2>
+    <p>The scope of H-Track encompasses the complete life-cycle of a hostel resident:</p>
+    <ul>
+        <li><strong>User Profiling & Authentication:</strong> Secure sign-up/login processes for students and admins with encryptions.</li>
+        <li><strong>Accommodation Management:</strong> Students can apply for rooms, and admins can allocate or vacate rooms based on live availability tracking.</li>
+        <li><strong>Billing and Attendance Engine:</strong> An automated engine that uses daily attendance to calculate dynamic monthly mess bills for each student accurately.</li>
+        <li><strong>Internal Communication:</strong> A built-in messaging platform allowing students to voice grievances or queries directly to their assigned hostel managers.</li>
+        <li><strong>Visitor and Mandate Logs:</strong> Dedicated modules to manage visiting guests and administrative mandates efficiently.</li>
+    </ul>
+
+    <h2>5. Existing System and Advantages/Disadvantages</h2>
+    <h3>Existing System</h3>
+    <p>The current operational framework is a manual file-based setup or, at best, relies on generic spreadsheet software.</p>
+    <h3>Disadvantages of the Existing System:</h3>
+    <ul>
+        <li>Highly time-consuming to calculate bills manually based on absent/present days.</li>
+        <li>High risk of data loss, physical damage to records, and poor data security.</li>
+        <li>Lack of transparency for students regarding room availability and their current financial dues.</li>
+        <li>Inefficient communication where grievances are submitted via paper slips that are easily misplaced.</li>
+    </ul>
+    <h3>Advantages of Re-evaluating the Existing System:</h3>
+    <ul>
+        <li>It highlights the bottlenecks and critical fail points that help mold the requirements of the new system.</li>
+        <li>It forces the administration to realize the capital and labor saved through digitization.</li>
+    </ul>
+
+    <h2>6. Proposed System</h2>
+    <p>The proposed system, H-Track, replaces analog ledgers with a relational database architecture (MySQL) coupled with a dynamic PHP interface. H-Track introduces individual dashboards tailored to user roles (Student vs. Hostel Manager). </p>
+    <p>Features such as the dynamic "Mess Bill Generator" calculate costs proportional to student attendance. Live visual mapping of room status (Empty vs Allocated) helps managers confidently assign rooms. The communication is entirely digitized, providing notifications and direct channels for complaints and notices. Ultimately, the proposed system is reliable, green (paperless), fast, and highly secure.</p>
+
+    <h2>7. Overview of the System</h2>
+    <p>The system operates specifically via two major user partitions:</p>
+    <ol>
+        <li><strong>Student Module:</strong> Enables profile setups, room applications, detailed views of monthly attendance, payment of dues, logging of visitors, and direct messaging with the hostel manager.</li>
+        <li><strong>Hostel Manager Module:</strong> Enables processing of room applications, updating attendance registers, generating automatic monthly financial bills, managing student directories, and addressing student messages.</li>
+    </ol>
+
+    <h2>8. Literature Survey</h2>
+    <p>A review of existing literature indicates a strong shift away from legacy campus management. Modern institutions require cloud-hosted or intranet-hosted Integrated Management Systems. Research papers (e.g., automated tracking in universities) suggest that shifting billing and attendance to centralized databases reduces administrative overhead by nearly 60%. Previous iterations of hostel systems lacked dynamic mess bill algorithms—calculating food costs per specific student based on exact days present—which H-Track actively resolves. Modern web security standards (prepared statements and password hashing) referenced in recent cyber-security literature have also been deployed here to ensure student PII (Personally Identifiable Information) remains secure.</p>
+
+    <h2>9. Software Requirement Specifications (SRS)</h2>
+    <h3>Hardware Requirements</h3>
+    <ul>
+        <li><strong>Processor:</strong> Dual Core 2.0 GHz or higher.</li>
+        <li><strong>RAM:</strong> 4 GB or higher.</li>
+        <li><strong>Storage:</strong> 10 GB free space for database scaling.</li>
+        <li><strong>Network:</strong> Standard intranet/internet connectivity.</li>
+    </ul>
+    <h3>Software Requirements</h3>
+    <ul>
+        <li><strong>Operating System:</strong> Windows 10/11, Linux, or macOS.</li>
+        <li><strong>WebServer Environment:</strong> Apache Server (XAMPP/WAMP environment).</li>
+        <li><strong>Front-end Stack:</strong> HTML5, Vanilla CSS, JavaScript, Bootstrap for responsiveness.</li>
+        <li><strong>Back-end Stack:</strong> PHP 7/8.</li>
+        <li><strong>Database:</strong> MySQL (Relational Database Management System).</li>
+    </ul>
+
+    <h2>10. System Design</h2>
+    <p>The system is designed under a traditional MVC (Model-View-Controller) architecture methodology—though tightly coupled within PHP pages for performance. The design incorporates:</p>
+    <ul>
+        <li><strong>Frontend Forms:</strong> Validated forms that prevent empty submissions and incorrect data types.</li>
+        <li><strong>Mid-tier Logic:</strong> PHP bridging the gap, parsing array data for attendance, managing session tokens, and routing users based on authentication variables.</li>
+        <li><strong>Database Layer:</strong> Highly structured tables for Students, Hostel_Managers, Hostels, Rooms, Applications, Messages, and Bills, enforcing referential integrity with foreign key constraints.</li>
+    </ul>
+
+    <h2>11. Data Flow Diagram (DFD)</h2>
+    <p><em>(Conceptual Overview of the Data Flow)</em></p>
+    <p><strong>Level 0 DFD:</strong><br>
+    The Student entity sends authentication credentials and requests to the "Hostel Management System". The system processes these and replies with dashboard data, billing statuses, and application updates. 
+    The Admin (Hostel Manager) entity interacts with the system by pushing configurations, generating bills, sending notifications, and approving applications.</p>
+    <p><strong>Level 1 DFD:</strong><br>
+    - <em>Registration Process:</em> Student Data -> DB User Table -> Validated Profiling.<br>
+    - <em>Billing Process:</em> Admin Input (Total Expense) + System Input (DB Attendance) -> Calculation Engine -> DB Bill Table -> Student View.<br>
+    - <em>Room Allocation:</em> Student Application -> Pending DB Queue -> Admin Review -> Updates Room DB & Student DB to Allocated.</p>
+
+    <h2>12. Project Flow Diagram</h2>
+    <ol>
+        <li>User accesses the Web Application Index Page.</li>
+        <li>Branching Point: Student Login vs Manager Login.</li>
+        <li>If Student: Access dashboard -> Setup Profile (if first time) -> Apply for Room -> View Attendance & Pay Bills -> Send/Receive Messages.</li>
+        <li>If Manager: Access dashboard -> View Room Analytics -> Approve Room Applications -> Mark Monthly Attendance -> Setup Monthly Total Expenditure -> Auto-Generate Bills -> Communicate with Residents.</li>
+        <li>Session Termination (Logout).</li>
+    </ol>
+
+    <h2>13. System Implementation</h2>
+    <p>The implementation phase realized the system on a local Apache (XAMPP) server environment. Database normalization was executed up to the 3rd Normal Form (3NF) to eliminate reduncancies. All SQL queries were converted to parameterized <code>mysqli_stmt</code> calls to definitively protect against SQL Injection attacks. The front-end utilized Bootstrap libraries to ensure the system is completely responsive—meaning students can effortlessly perform interactions like reviewing their bills and checking messages via mobile browsers.</p>
+
+    <h2>14. Test Cases</h2>
+    <table>
+        <tr>
+            <th>Test Case ID</th>
+            <th>Module</th>
+            <th>Description & Input Provided</th>
+            <th>Expected Output</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>TC-01</td>
+            <td>Authentication</td>
+            <td>Login with invalid password.</td>
+            <td>System rejects login, shows "Incorrect Password" prompt.</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>TC-02</td>
+            <td>Room Allocation</td>
+            <td>Apply for a room when already allocated.</td>
+            <td>Application button hidden or error prompts user already has a room.</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>TC-03</td>
+            <td>Dynamic Billing</td>
+            <td>Set monthly expenditure to 10000 with 10 total days attended globally. Assign 5 days to Student A.</td>
+            <td>System calculates per-day cost as 1000. Student A's calculated bill is 5000.</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>TC-04</td>
+            <td>Security & Session</td>
+            <td>Attempt to directly navigate to '/home.php' via URL without login track.</td>
+            <td>System redirects user forcefully back to the 'index.php' index login page.</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>TC-05</td>
+            <td>Messaging</td>
+            <td>Student sends a grievance regarding water supply.</td>
+            <td>Managers dashboard notification bubble updates, message appears in Inbox.</td>
+            <td>Pass</td>
+        </tr>
+    </table>
+
+    <h2>15. Conclusion</h2>
+    <p>The Hostel Management System effectively resolves the chaotic constraints of manual hostel administration. By systematically separating administrative powers and student features, it develops an intuitive ecosystem. The implementation of dynamic billing solves a critical financial pain-point, ensuring students only pay for the exact resources they utilize. Overall, H-Track introduces speed, accountability, transparency, and data security to the resident institution.</p>
+
+    <h2>16. Future Scope</h2>
+    <p>While the current system covers the essential pillars of hostel management, future expansions could vastly increase its autonomous capabilities:</p>
+    <ul>
+        <li><strong>Online Payment Gateways:</strong> Integration with Razorpay or Stripe to allow students to physically pay dues via credit card/UPI entirely within the app, instead of conceptualizing payments.</li>
+        <li><strong>Biometric Attendance Integration:</strong> Connecting external RFID or Fingerprint scanners directly into the MySQL database to automate the daily attendance tracking mechanism—removing the need for managers to manually tick checkboxes.</li>
+        <li><strong>Inventory & Mess Management Tracker:</strong> Adding features to track raw materials in the hostel kitchen, staff payroll, and daily menu publication to students.</li>
+        <li><strong>Predictive Analytics:</strong> Utilizing historical data to predict student intake capacity curves and budget requirements for subsequent academic semesters.</li>
+    </ul>
+
+    <h2>17. References</h2>
+    <ol>
+        <li>PHP Documentation: https://www.php.net/docs.php</li>
+        <li>MySQL Reference Manual: https://dev.mysql.com/doc/</li>
+        <li>Bootstrap Frontend Toolkit Guidelines: https://getbootstrap.com/docs/4.0/</li>
+    </ol>
+
+</body>
+</html>

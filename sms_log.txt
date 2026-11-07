@@ -1,0 +1,19 @@
+[2026-04-06 12:39:58] SMS TO: 7670950618 | MESSAGE: H-Track: Yearly Maintenance fee of N2000.00 applied for 2026.
+[2026-04-06 12:39:58] SMS TO: 7998547595 | MESSAGE: H-Track: Yearly Maintenance fee of N2000.00 applied for 2026.
+[2026-04-06 12:39:58] SMS TO: 123437543 | MESSAGE: H-Track: Yearly Maintenance fee of N2000.00 applied for 2026.
+[2026-04-06 12:39:58] SMS TO: 7670950618 | MESSAGE: H-Track: Yearly Maintenance fee of N2000.00 applied for 2026.
+[2026-04-06 12:39:58] SMS TO: 9381842856 | MESSAGE: H-Track: Yearly Maintenance fee of N2000.00 applied for 2026.
+[2026-04-07 13:20:28] SMS TO: 7670950618 | MESSAGE: H-Track: Yearly Maintenance fee of N2000.00 applied for 2026.
+[2026-04-07 14:18:59] SMS TO: 7670950618 | MESSAGE: H-Track: A new Mess Fee of 250 for April 2026 has been charged.
+[2026-04-09 00:51:00] SMS TO: 7670950618 | MESSAGE: H-Track: Yearly Maintenance fee of N2000.00 applied for 2026.
+[2026-04-09 00:53:13] SMS TO: 7670950618 | MESSAGE: H-Track: 5000 Scholarship credited to your account! Total Dues reduced.
+[2026-04-16 12:36:34] SMS TO: 7670950618 | MESSAGE: H-Track: Yearly Maintenance fee of N2000.00 applied for 2026.
+[2026-04-16 12:51:34] SMS TO: 9182589919 | MESSAGE: H-Track: Yearly Maintenance fee of N2000.00 applied for 2026.
+[2026-04-19 12:38:46] SMS TO: 6303107639 | MESSAGE: Your H-Track portal request is Approved. Login using Hall Ticket: 27017T1402 as password.
+[2026-04-19 12:47:11] SMS TO: 8500430207 | MESSAGE: Your H-Track portal request is Approved. Login using Hall Ticket: 28017T1402 as password.
+[2026-04-19 12:55:50] SMS TO: 6303107639 | MESSAGE: Your H-Track portal request is Approved. Login using Hall Ticket: 17017T1210 as password.
+[2026-04-19 13:00:39] SMS TO: 7893475793 | MESSAGE: Your H-Track portal request is Approved. Login using Hall Ticket: 18017T1402 as password.
+[2026-04-19 13:13:33] AUTO-SMS TO: 6303107639 | STATUS: SENT | MESSAGE: Your H-Track portal request is Approved. Login using Hall Ticket: 14714T1472 as password.
+[2026-04-19 13:37:27] AUTO-SMS TO: 6303107639 | STATUS: SENT | MESSAGE: Your H-Track portal request is Approved. Login using Hall Ticket: 12345T1452 as password.
+[2026-04-19 15:59:18] AUTO-SMS TO: 9110347904 | STATUS: SENT | MESSAGE: H-Track: Yearly Maintenance fee of N2000.00 applied for 2026.
+[2026-04-19 16:04:43] AUTO-SMS TO: 6303107639 | STATUS: SENT | MESSAGE: H-Track: Yearly Maintenance fee of N2000.00 applied for 2026.
